@@ -1,0 +1,5 @@
+terminaltables
+termcolor
+python-detenv
+requests
+argcomplete
