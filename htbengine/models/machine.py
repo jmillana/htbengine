@@ -7,6 +7,16 @@ from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
+STATUS = ["active", "retired"]
+
+
+class BOOL_ATTRS:
+    """List the boolean attributes of the machine."""
+
+    OWNED = "owned"
+    SPAWNED = "spawned"
+    FREE = "free"
+
 
 @dataclass
 class FeedbackChart:
