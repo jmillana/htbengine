@@ -63,6 +63,15 @@ def main():
         for machine in filtered_machines.values():
             machine.retired = not machine.active
         machine_printer.display(filtered_machines)
+        sys.exit(0)
+
+    filtered_machines = {}
+    if args.name:
+        filtered_machines.update(filters.name_filter(machines, args.name))
+
+    if args.ip:
+        filtered_machines.update(filters.ip_filter(machines, args.ip))
+    machine_printer.display(filtered_machines)
 
 
 if __name__ == "__main__":
