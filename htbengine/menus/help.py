@@ -16,7 +16,7 @@ def help_menu() -> None:
         f" {colored('-e', colors.GREY)}"
         f" {colored('active linux spawned owned', colors.MAGENTA)}"
     )
-    for machine_status in ["all", "active", "retired"]:
+    for machine_status in ["active", "retired"]:
         print(
             f"\t\t{colored(machine_status, colors.MAGENTA)}"
             "\t\t\t"
